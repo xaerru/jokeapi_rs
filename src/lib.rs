@@ -9,6 +9,7 @@ pub struct Joke {
     pub joke_type: String,
     pub categories: String,
     pub blacklist_flags: String,
+    pub safe: String,
     client: reqwest::Client,
 }
 
@@ -29,6 +30,7 @@ impl Joke {
             joke_type: String::new(),
             categories: String::from("Any"),
             blacklist_flags: String::new(),
+            safe: String::new(),
             client: reqwest::Client::new(),
         }
     }
@@ -38,8 +40,8 @@ impl Joke {
         let res: Data = self
             .client
             .get(format!(
-                "{}{}?{}&{}",
-                self.url, self.categories, self.joke_type, self.blacklist_flags
+                "{}{}?{}&{}&{}",
+                self.url, self.categories, self.joke_type, self.blacklist_flags, self.safe
             ))
             .send()
             .await
@@ -94,5 +96,10 @@ impl Joke {
         } else {
             panic!("Invalid flags")
         }
+    }
+
+    pub fn safe(&mut self) -> &mut Self {
+        self.safe = String::from("safe-mode");
+        self
     }
 }
