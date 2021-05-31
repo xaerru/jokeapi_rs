@@ -10,6 +10,7 @@ fn main() {
                 .collect(),
         )
         .blacklist(["sexist", "nsfw"].iter().map(|x| x.to_string()).collect())
+        //.safe() // Uncomment to enable safe mode
         .fetch()
         .joke();
     println!("{}", res);
