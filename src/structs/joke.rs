@@ -1,5 +1,6 @@
 use serde::{Deserialize, Serialize};
 
+/// JSON result
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 pub struct Data {
     pub error: bool,
@@ -12,6 +13,7 @@ pub struct Data {
     pub lang: String,
 }
 
+/// Blacklist Flags
 #[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]
 pub struct Flags {
     pub nsfw: bool,
@@ -22,6 +24,7 @@ pub struct Flags {
     pub explicit: bool,
 }
 
+/// Kind of joke
 #[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]
 #[serde(tag = "type")]
 #[serde(rename_all = "lowercase")]
