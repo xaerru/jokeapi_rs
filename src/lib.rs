@@ -43,7 +43,7 @@
 //! }
 //! ```
 //!
-//! ## Get a Data struct which contains all the fields of the the result
+//! ## Get a Data struct which contains all the fields
 //!
 //! ```rust
 //! use jokeapi_rs::structs::joke::Data;
