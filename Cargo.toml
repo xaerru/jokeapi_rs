@@ -2,7 +2,7 @@
 name = "jokeapi_rs"
 version = "0.1.2"
 edition = "2018"
-authors = ["Gauravsingh Sisodia gauravsinghsisodia5@gmail.com"]
+authors = ["grvxs gauravsinghsisodia5@gmail.com"]
 description = "Rust wrapper for https://v2.jokeapi.dev/"
 keywords = ["api", "joke"]
 readme = "./README.md"
