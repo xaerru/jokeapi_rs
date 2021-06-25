@@ -17,7 +17,7 @@
 //! Type can either be "single" or "twopart"
 //!
 //! ```rust
-//! use jokeapi::Joke;
+//! use jokeapi_rs::Joke;
 //!
 //! fn main() {
 //!     println!("{}", Joke::new().of_type("single").fetch().joke());
@@ -27,6 +27,8 @@
 //! ## Get a joke which belongs to certain categories
 //!
 //! ```rust
+//! use jokeapi_rs::Joke;
+//!
 //! fn main() {
 //!     println!(
 //!         "{}",
