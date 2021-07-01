@@ -1,10 +1,10 @@
 [package]
 name = "jokeapi_rs"
-version = "0.1.3"
+version = "0.1.4"
 edition = "2018"
 authors = ["grvxs gauravsinghsisodia5@gmail.com"]
 description = "Rust wrapper for https://v2.jokeapi.dev/"
-keywords = ["api", "joke"]
+keywords = ["api", "jokeapi", "wrapper"]
 readme = "./README.md"
 repository = "https://github.com/grvxs/jokeapi_rs"
 license = "Apache-2.0"
